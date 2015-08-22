@@ -2,7 +2,7 @@ Welcome to Shai & Maor's Iweatherdataservice
 
 SUMMARY :
 
-this is a final project of C# course at shenkat college
+this is a final project of C# course at shenkar college
 
 API - HOW TO US :
 
