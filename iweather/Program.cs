@@ -20,11 +20,19 @@ namespace Iweather
             Location loc = new Location();
 
             loc.cityName = "London";
-            loc.countryName = "UK";
+            loc.countryName =  "UK";
 
-            var WUNDERGROUND = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.WUNDERGROUND, loc);
-            var OPEN_MAP     = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.OPENMAP, loc);
-            var WORLDWEATHERONLINE = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.WORLDWEATHERONLINE, loc);
+            WeatherData WUNDERGROUND = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.WUNDERGROUND, loc);
+            WeatherData OPENMAP     = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.OPENMAP, loc);
+            WeatherData WORLDWEATHERONLINE = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.WORLDWEATHERONLINE, loc);
+
+            loc.cityName = "jerusalem";
+            loc.countryName = "Israel";
+
+            WUNDERGROUND = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.WUNDERGROUND, loc);
+            OPENMAP = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.OPENMAP, loc);
+            WORLDWEATHERONLINE = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.WORLDWEATHERONLINE, loc);
+
         }
     }
 }

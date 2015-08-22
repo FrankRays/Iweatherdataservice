@@ -18,3 +18,8 @@ C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\iweather\obj
 C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\iweather\bin\Debug\Iweather.exe.config
 C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\iweather\obj\Debug\Iweather.exe
 C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\iweather\obj\Debug\Iweather.pdb
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\iweather\bin\Debug\Iweather.exe
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\iweather\bin\Debug\Iweather.pdb
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\iweather\obj\Debug\Iweather.csprojResolveAssemblyReference.cache
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\iweather\obj\Debug\Iweather.Properties.Resources.resources
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\iweather\obj\Debug\Iweather.csproj.GenerateResource.Cache
