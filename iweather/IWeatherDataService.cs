@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Iweather
 {
     //interface on the functions the developer needs to implement
-    interface IWeatherDataService
+    public interface IWeatherDataService
     {
          WeatherData GetWeatherData(Location location);
     }

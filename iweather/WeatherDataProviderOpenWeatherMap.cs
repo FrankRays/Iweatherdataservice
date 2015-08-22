@@ -59,10 +59,6 @@ namespace Iweather
             };
                 foreach (var item in list)
                 {
-
-                    //printing to console for presentation only
-                    System.Console.WriteLine("OpenWeatherMap : " + item.Name + " " + FarToCell(double.Parse(item.Temp)));
-
                     //building the weatherdata structure
                     WD.cityName = item.Name;
                     WD.temp = FarToCell(double.Parse(item.Temp));

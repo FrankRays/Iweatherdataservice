@@ -65,9 +65,6 @@ namespace Iweather
                 };
                 foreach (var item in list)
                 {              
-                    //printing to console for presentation only
-                    System.Console.WriteLine("WunderGround : " + item.Name + " " + item.Temp);
-                   
                     //building the weatherdata structure
                     WD.cityName = item.Name;
                     WD.temp = double.Parse(item.Temp);

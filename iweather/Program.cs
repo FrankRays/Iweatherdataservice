@@ -20,18 +20,26 @@ namespace Iweather
             Location loc = new Location();
 
             loc.cityName = "London";
-            loc.countryName =  "UK";
+            loc.countryName = "UK";
 
-            WeatherData WUNDERGROUND = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.WUNDERGROUND, loc);
-            WeatherData OPENMAP     = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.OPENMAP, loc);
-            WeatherData WORLDWEATHERONLINE = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.WORLDWEATHERONLINE, loc);
+            IWeatherDataService service = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.WUNDERGROUND);
 
-            loc.cityName = "jerusalem";
-            loc.countryName = "Israel";
+            WeatherData weatherData = service.GetWeatherData(loc);
 
-            WUNDERGROUND = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.WUNDERGROUND, loc);
-            OPENMAP = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.OPENMAP, loc);
-            WORLDWEATHERONLINE = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.WORLDWEATHERONLINE, loc);
+            System.Console.WriteLine("WUNDERGROUND : " + weatherData.cityName + " " + weatherData.temp);
+
+            service = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.OPENMAP);
+
+            weatherData = service.GetWeatherData(loc);
+
+            System.Console.WriteLine("OPENMAP : " + weatherData.cityName + " " + weatherData.temp);
+
+
+            service = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.WORLDWEATHERONLINE);
+
+            weatherData = service.GetWeatherData(loc);
+
+            System.Console.WriteLine("WORLDWEATHERONLINE : " + weatherData.cityName + " " + weatherData.temp);
 
         }
     }
