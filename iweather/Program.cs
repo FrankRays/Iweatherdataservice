@@ -15,7 +15,7 @@ namespace Iweather
         static void Main()
         {
 
-            //sample code of how to implement the factory and the interface
+            //example of use , sample code of how to implement the factory and the interface
 
             Location loc = new Location();
 

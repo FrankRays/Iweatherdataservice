@@ -2,34 +2,80 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>sport books</title>
-		<link href="includes/style.css" rel="stylesheet">
+		<title>Iweatherdataservice</title>
 	</head>
 	<body>
+	
 		<main>
-			<h1>WELCOME TO Shai & Maor's Iweatherdataservice</h1>
+			<h1>Welcome to Shai & Maor's Iweatherdataservice</h1>
 
 			<p id="p1">
-				<h2>SUMMARY:</h2>	
+				<h2>SUMMARY :</h2>	
 				this is a final project of C# course at shenkat college
 				<br>
+				<br>
 				please take a look at the GitHub repository of the project
+				<br>
 				<br>
 				<a href="https://github.com/maortoubian/Iweatherdataservice">https://github.com/maortoubian/Iweatherdataservice</a>
 			</p>
 
 			<p id="p2">
-				<h2>HOW TO US</h2>	
+				<h2>API - HOW TO US :</h2>	
+				
+				<b>1.</b>
+
+				declare a Location object for sending to the wanted provider : 
+				<br><br>
+				Location loc = new Location();
+				<br>
+				loc.cityName = "London";
+				<br>
+				loc.countryName =  "UK";
+				<br>
+				<br>
+				<b>2.</b>
+
+				call the wanted provider from the factory with one of the providers enum values : 
+				<br><br>
+				WeatherDataServiceFactory.Providers.WUNDERGROUND
+				<br><br>
+				WeatherDataServiceFactory.Providers.OPENMAP
+				<br><br>
+				WeatherDataServiceFactory.Providers.WORLDWEATHERONLINE
+				<br><br>
+				and asign it to a WeatherData var
+				<br><br>
+				FOR EXAMPLE:
+				<br><br>
+				 WeatherData WUNDERGROUND = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.WUNDERGROUND, loc);
+				<br><br>
+				
+				<b>3.</b>
+
+				what you will get is a WeatherData object that holds the wanted city and its current temperature : 
+				<br><br>
+				
+				System.Console.WriteLine("WUNDERGROUND : " + WUNDERGROUND.cityName + " " + WUNDERGROUND.temp);
+				
+				<br><br>
+				
+				the output will be : WUNDERGROUND : London 28
+				<br><br>
+				
+				enjoy 
 
 			</p>
 
 			<p id="p3">	
-				<h2>CONTACT US:</h2>	
+				<h2>CONTACT US :</h2>	
 				we will be happy to hear what you think about the project and answer to any question about it
 				<br>
-				Maor Toubian : <b> MAORTOUBIAN@GMAIL.COM </b>
 				<br>
 				Maor Toubian : <b> MAORTOUBIAN@GMAIL.COM </b>
+				<br>
+				<br>
+				Shai Malka : <b> SHAI2210@GMAIL.COM </b>
 			</p>
 
 		</main>
