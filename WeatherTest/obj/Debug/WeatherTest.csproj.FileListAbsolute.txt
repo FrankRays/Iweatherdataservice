@@ -1,0 +1,15 @@
+C:\Users\shai\Documents\Visual Studio 2013\Projects\iweather\WeatherTest\bin\Debug\WeatherTest.dll
+C:\Users\shai\Documents\Visual Studio 2013\Projects\iweather\WeatherTest\bin\Debug\WeatherTest.pdb
+C:\Users\shai\Documents\Visual Studio 2013\Projects\iweather\WeatherTest\bin\Debug\iweather.exe
+C:\Users\shai\Documents\Visual Studio 2013\Projects\iweather\WeatherTest\bin\Debug\iweather.pdb
+C:\Users\shai\Documents\Visual Studio 2013\Projects\iweather\WeatherTest\obj\Debug\WeatherTest.csprojResolveAssemblyReference.cache
+C:\Users\shai\Documents\Visual Studio 2013\Projects\iweather\WeatherTest\obj\Debug\WeatherTest.dll
+C:\Users\shai\Documents\Visual Studio 2013\Projects\iweather\WeatherTest\obj\Debug\WeatherTest.pdb
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\WeatherTest\bin\Debug\WeatherTest.dll
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\WeatherTest\bin\Debug\WeatherTest.pdb
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\WeatherTest\bin\Debug\iweather.exe
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\WeatherTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\WeatherTest\bin\Debug\iweather.pdb
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\WeatherTest\obj\Debug\WeatherTest.csprojResolveAssemblyReference.cache
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\WeatherTest\obj\Debug\WeatherTest.dll
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\WeatherTest\obj\Debug\WeatherTest.pdb

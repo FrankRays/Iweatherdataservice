@@ -1,0 +1,20 @@
+c:\users\shai\documents\visual studio 2013\Projects\iweather\iweather\bin\Debug\iweather.exe.config
+c:\users\shai\documents\visual studio 2013\Projects\iweather\iweather\obj\Debug\iweather.csprojResolveAssemblyReference.cache
+c:\users\shai\documents\visual studio 2013\Projects\iweather\iweather\obj\Debug\iweather.Properties.Resources.resources
+c:\users\shai\documents\visual studio 2013\Projects\iweather\iweather\obj\Debug\iweather.csproj.GenerateResource.Cache
+c:\users\shai\documents\visual studio 2013\Projects\iweather\iweather\bin\Debug\iweather.exe
+c:\users\shai\documents\visual studio 2013\Projects\iweather\iweather\bin\Debug\iweather.pdb
+c:\users\shai\documents\visual studio 2013\Projects\iweather\iweather\obj\Debug\iweather.exe
+c:\users\shai\documents\visual studio 2013\Projects\iweather\iweather\obj\Debug\iweather.pdb
+c:\users\shai\documents\visual studio 2013\Projects\iweather\iweather\obj\Debug\iweather.Form1.resources
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\iweather\bin\Debug\iweather.exe.config
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\iweather\obj\Debug\iweather.exe
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\iweather\obj\Debug\iweather.pdb
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\iweather\bin\Debug\iweather.exe
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\iweather\bin\Debug\iweather.pdb
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\iweather\obj\Debug\iweather.csprojResolveAssemblyReference.cache
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\iweather\obj\Debug\iweather.Properties.Resources.resources
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\iweather\obj\Debug\iweather.csproj.GenerateResource.Cache
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\iweather\bin\Debug\Iweather.exe.config
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\iweather\obj\Debug\Iweather.exe
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\iweather\obj\Debug\Iweather.pdb
