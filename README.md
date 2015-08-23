@@ -2,42 +2,36 @@ Welcome to Shai & Maor's Iweatherdataservice
 
 SUMMARY :
 
-this is a final project of C# course at shenkar college
+	this is a final project of C# course at shenkar college
+
+	please take a look at the GitHub repository of the project
+
+	https://github.com/maortoubian/Iweatherdataservice
 
 API - HOW TO US :
 
-1. declare a Location object for sending to the wanted provider :
-
+	//declaring and assiging Location object
 	Location loc = new Location();
+
 	loc.cityName = "London";
+
 	loc.countryName = "UK";
 
-2. call the wanted provider from the factory with one of the providers enum values :
+	//requesting the 1st provider using the provider identifier in the factory
+	IWeatherDataService service = WeatherDataServiceFactory .getWeatherDataService(WeatherDataServiceFactory.Providers.WUNDERGROUND);
 
-	WeatherDataServiceFactory.Providers.WUNDERGROUND
+	//recieving a WeatherData object from the first provider
+	WeatherData weatherData = service.GetWeatherData(loc);
 
-	WeatherDataServiceFactory.Providers.OPENMAP
-
-	WeatherDataServiceFactory.Providers.WORLDWEATHERONLINE
-
-	and asign it to a WeatherData var
-
-	FOR EXAMPLE:
-
-	WeatherData WUNDERGROUND = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.WUNDERGROUND, loc);
-
-3. what you will get is a WeatherData object that holds the wanted city and its current temperature :
-
-	System.Console.WriteLine("WUNDERGROUND : " + WUNDERGROUND.cityName + " " + WUNDERGROUND.temp);
-
-	the output will be : WUNDERGROUND : London 28
+	//printing the WeatherData fields, OUTPUT Example : WUNDERGROUND : London, 24 celsius
+	System.Console.WriteLine("WUNDERGROUND : " + weatherData.cityName + ", " + weatherData.temp + " celsius");
 
 	enjoy
 
 CONTACT US :
 
-we will be happy to hear what you think about the project and answer to any question about it
+	we will be happy to hear what you think about the project and answer to any question about it
 
-Maor Toubian : MAORTOUBIAN@GMAIL.COM
+	Maor Toubian : MAORTOUBIAN@GMAIL.COM
 
-Shai Malka   : SHAI2210@GMAIL.COM 
+	Shai Malka : SHAI2210@GMAIL.COM 

@@ -13,3 +13,11 @@ C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\WeatherTest\
 C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\WeatherTest\obj\Debug\WeatherTest.csprojResolveAssemblyReference.cache
 C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\WeatherTest\obj\Debug\WeatherTest.dll
 C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\פרויקט\WeatherTest\obj\Debug\WeatherTest.pdb
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\WeatherTest\bin\Debug\WeatherTest.dll
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\WeatherTest\bin\Debug\WeatherTest.pdb
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\WeatherTest\bin\Debug\Iweather.exe
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\WeatherTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\WeatherTest\bin\Debug\Iweather.pdb
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\WeatherTest\obj\Debug\WeatherTest.csprojResolveAssemblyReference.cache
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\WeatherTest\obj\Debug\WeatherTest.dll
+C:\Users\IBM_ADMIN\Desktop\STUDIES\שפות תכנות\Iweatherdataservice\WeatherTest\obj\Debug\WeatherTest.pdb
