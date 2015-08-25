@@ -29,7 +29,7 @@ API - HOW TO US :
 
         //printing the WeatherData fields, OUTPUT Example :
         //WUNDERGROUND: city: London, temp: 14 celsius, humidity: 94 %, pressure: 1004 hPa, wind: 20 kPh West
-        System.Console.WriteLine("WUNDERGROUND : city : " + weatherData.cityName +
+        Console.WriteLine("WUNDERGROUND : city : " + weatherData.cityName +
                                       ", temp : " + weatherData.temp + " celsius" +
                                       ", humidity : " + weatherData.humidity +
                                       ", pressure : " + weatherData.pressure + " hPa" +

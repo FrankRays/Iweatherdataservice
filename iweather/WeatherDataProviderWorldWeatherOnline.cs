@@ -41,15 +41,19 @@ namespace Iweather
 
             try
             {
+                if (location.countryName == null || location.cityName == null)
+                {
+                    throw (new WeatherDataServiceException("WeatherDataServiceException : location.countryName or location.countryName are null"));
+                }
+
                 //sending a correct sturcure of query string to the site
                 addr = "http://api.worldweatheronline.com/free/v2/weather.ashx?key=" + Key + "&q=" + location.cityName + ","+ location.countryName + "&format=xml";
                 xdoc = XDocument.Load(addr);
-
             }
 
             catch (Exception e)
             {
-              throw (new  WeatherDataServiceException("web problem")); 
+                Console.WriteLine(e.Message);
             }
 
             try
@@ -79,8 +83,9 @@ namespace Iweather
 
             catch (Exception e)
             {
-                throw (new WeatherDataServiceException("persing error"));
+                Console.WriteLine(e.Message + " : caused from internet problem or wrong values in the Location");
             }
+
             return WD;
         }
 

@@ -35,8 +35,15 @@ namespace Iweather
             XDocument xdoc=null;
             WeatherData WD=new WeatherData();
             string addr="";
+
             try
             {
+
+                if (location.countryName == null || location.cityName == null)
+                {
+                    throw (new WeatherDataServiceException("WeatherDataServiceException : location.countryName or location.countryName are null"));
+                }
+
                 //sending a correct sturcure of query string to the site
                 addr = "http://api.openweathermap.org/data/2.5/weather?q=" + location.cityName + "," + location.countryName + "&mode=xml";
                 xdoc = XDocument.Load(addr);
@@ -44,7 +51,7 @@ namespace Iweather
 
             catch (Exception e)
             {
-              throw (new  WeatherDataServiceException("web problem")); 
+                Console.WriteLine(e.Message);
             }
 
             try
@@ -75,7 +82,7 @@ namespace Iweather
 
             catch (Exception e)
             {
-                throw (new WeatherDataServiceException("persing error"));
+                Console.WriteLine(e.Message + " : caused from internet problem or wrong values in the Location");
             }
 
             return WD;

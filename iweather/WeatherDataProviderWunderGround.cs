@@ -41,22 +41,27 @@ namespace Iweather
 
             try
             {
+                if ( location.countryName == null || location.cityName == null)
+                {
+                    throw (new WeatherDataServiceException("WeatherDataServiceException : location.countryName or location.countryName are null"));
+                }
+
                 //sending a correct sturcure of query string to the site
                 addr = "http://api.wunderground.com/api/" + Key + "/conditions/q/" + location.countryName + "/" + location.cityName + ".xml";
+
                 xdoc = XDocument.Load(addr);
 
             }
-
             catch (Exception e)
             {
-              throw (new  WeatherDataServiceException("web problem")); 
+                Console.WriteLine(e.Message);
             }
-
+        
             try
             {    
                 //parsing the XML recieved from the site by its unique stucture
                 var list = from item in xdoc.Descendants("response")
-                select new
+                select new 
                 {
                     
                     Name = item.Element("current_observation").Element("display_location").Element("city").Value,
@@ -82,8 +87,9 @@ namespace Iweather
 
             catch (Exception e)
             {
-                throw (new WeatherDataServiceException("persing error"));
+                Console.WriteLine(e.Message + " : caused from parsing error or wrong values in the Location");
             }
+
             return WD;
         }
 
