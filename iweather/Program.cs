@@ -29,8 +29,14 @@ namespace Iweather
             //recieving a WeatherData object from the first provider
             WeatherData weatherData = service.GetWeatherData(loc);
 
-            //printing the WeatherData fields, OUTPUT Example : WUNDERGROUND : London, 24 celsius
-            System.Console.WriteLine("WUNDERGROUND : " + weatherData.cityName + ", " + weatherData.temp + " celsius");
+            //printing the WeatherData fields, OUTPUT Example :
+            //WUNDERGROUND: city: London, temp: 14 celsius, humidity: 94 %, pressure: 1004 hPa, wind: 20 kPh West
+            System.Console.WriteLine("WUNDERGROUND : city : " + weatherData.cityName +
+                                      ", temp : " + weatherData.temp + " celsius" +
+                                      ", humidity : " + weatherData.humidity +
+                                      ", pressure : " + weatherData.pressure + " hPa" +
+                                      ", wind : " + weatherData.windSpeed + " kPh" +
+                                      " " + weatherData.windDirection);
 
 
             //requesting the 2nd provider using the provider identifier in the factory
@@ -39,8 +45,14 @@ namespace Iweather
             //recieving a WeatherData object from the 2nd provider
             weatherData = service.GetWeatherData(loc);
 
-            //printing the WeatherData fields, OUTPUT Example : OPENMAP : London, 24 celsius
-            System.Console.WriteLine("OPENMAP : " + weatherData.cityName + ", " + weatherData.temp + " celsius");
+            //printing the WeatherData fields, OUTPUT Example :
+            //OPENMAP : city : London, temp : 14.1 celsius, humidity : 82%, pressure : 1002 hPa, wind : 24.12 kPh W
+            System.Console.WriteLine("OPENMAP : city : " + weatherData.cityName +
+                                      ", temp : " + weatherData.temp + " celsius" +
+                                      ", humidity : " + weatherData.humidity +
+                                      ", pressure : " + weatherData.pressure + " hPa" +
+                                      ", wind : " + weatherData.windSpeed + " kPh" +
+                                      " " + weatherData.windDirection);
 
 
             //requesting the 3rd provider using the provider identifier in the factory
@@ -49,8 +61,14 @@ namespace Iweather
             //recieving a WeatherData object from the 3rd provider
             weatherData = service.GetWeatherData(loc);
 
-            //printing the WeatherData fields, OUTPUT Example : WORLDWEATHERONLINE : London, 24 celsius
-            System.Console.WriteLine("WORLDWEATHERONLINE : " + weatherData.cityName + ", " + weatherData.temp + " celsius");
+            //printing the WeatherData fields,OUTPUT Example :
+            //WORLDWEATHERONLINE : city : London, United Kingdom, temp : 16 celsius, humidity : 82%, pressure : 1003 hPa, wind : 24 kPh W
+            System.Console.WriteLine("WORLDWEATHERONLINE : city : " + weatherData.cityName +
+                                      ", temp : " + weatherData.temp + " celsius" +
+                                      ", humidity : " + weatherData.humidity +
+                                      ", pressure : " + weatherData.pressure + " hPa" +
+                                      ", wind : " + weatherData.windSpeed + " kPh" +
+                                      " " + weatherData.windDirection);
 
         }
     }

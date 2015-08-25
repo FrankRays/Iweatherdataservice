@@ -42,7 +42,7 @@ namespace Iweather
             try
             {
                 //sending a correct sturcure of query string to the site
-                addr = "http://api.wunderground.com/api/" + Key + "/forecast/geolookup/q/" + location.countryName + "/" + location.cityName + ".xml";
+                addr = "http://api.wunderground.com/api/" + Key + "/conditions/q/" + location.countryName + "/" + location.cityName + ".xml";
                 xdoc = XDocument.Load(addr);
 
             }
@@ -58,16 +58,24 @@ namespace Iweather
                 var list = from item in xdoc.Descendants("response")
                 select new
                 {
-
-                    Temp = item.Element("forecast").Element("simpleforecast").Element("forecastdays").Element("forecastday").Element("high").Element("celsius").Value,
-                    Name = item.Element("location").Element("city").Value
+                    
+                    Name = item.Element("current_observation").Element("display_location").Element("city").Value,
+                    Temp = item.Element("current_observation").Element("temp_c").Value,
+                    Pressure = item.Element("current_observation").Element("pressure_mb").Value,
+                    Humidity = item.Element("current_observation").Element("relative_humidity").Value,
+                    WindSpeed = item.Element("current_observation").Element("wind_kph").Value,
+                    WindDirection = item.Element("current_observation").Element("wind_dir").Value
 
                 };
                 foreach (var item in list)
-                {              
+                {
                     //building the weatherdata structure
                     WD.cityName = item.Name;
                     WD.temp = double.Parse(item.Temp);
+                    WD.pressure = int.Parse(item.Pressure);
+                    WD.humidity = item.Humidity;
+                    WD.windSpeed = double.Parse(item.WindSpeed);
+                    WD.windDirection = item.WindDirection;
 
                 }
             }

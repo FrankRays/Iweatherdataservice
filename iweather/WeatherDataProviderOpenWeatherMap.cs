@@ -54,14 +54,21 @@ namespace Iweather
                 select new
                 {
                     Name = item.Element("city").Attribute("name").Value,
-                    Temp = item.Element("temperature").Attribute("value").Value
-
-            };
+                    Temp = item.Element("temperature").Attribute("value").Value,
+                    Pressure = item.Element("pressure").Attribute("value").Value,
+                    Humidity = item.Element("humidity").Attribute("value").Value,
+                    WindSpeed = item.Element("wind").Element("speed").Attribute("value").Value,
+                    WindDirection = item.Element("wind").Element("direction").Attribute("code").Value
+                };
                 foreach (var item in list)
                 {
                     //building the weatherdata structure
                     WD.cityName = item.Name;
                     WD.temp = FarToCell(double.Parse(item.Temp));
+                    WD.pressure = int.Parse(item.Pressure);
+                    WD.humidity = item.Humidity + "%";
+                    WD.windSpeed = double.Parse(item.WindSpeed) * 3.6; //convert from mps to kph
+                    WD.windDirection = item.WindDirection;
                 }
                 
             }
@@ -80,5 +87,6 @@ namespace Iweather
             double c = f-273.15;
             return c;
         }
+
     }
 }

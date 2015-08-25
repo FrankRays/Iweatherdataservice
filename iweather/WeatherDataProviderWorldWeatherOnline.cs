@@ -58,16 +58,22 @@ namespace Iweather
                 var list = from item in xdoc.Descendants("data")
                 select new
                 {
-
+                    Name = item.Element("request").Element("query").Value,
                     Temp = item.Element("current_condition").Element("temp_C").Value,
-                    Name = item.Element("request").Element("query").Value
-
+                    Pressure = item.Element("current_condition").Element("pressure").Value,
+                    Humidity = item.Element("current_condition").Element("humidity").Value,
+                    WindSpeed = item.Element("current_condition").Element("windspeedKmph").Value,
+                    WindDirection = item.Element("current_condition").Element("winddir16Point").Value
                 };
                 foreach (var item in list)
                 {
                     //building the weatherdata structure
                     WD.cityName = item.Name;
                     WD.temp = double.Parse(item.Temp);
+                    WD.pressure = int.Parse(item.Pressure);
+                    WD.humidity = item.Humidity + "%";
+                    WD.windSpeed = double.Parse(item.WindSpeed);
+                    WD.windDirection = item.WindDirection;
                 }
             }
 

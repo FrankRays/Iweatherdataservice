@@ -14,5 +14,9 @@ namespace Iweather
     {       
         public string cityName { get; set; }
         public double temp { get; set; }
+        public int pressure { get; set; }
+        public string humidity { get; set; }
+        public double windSpeed { get; set; }
+        public string windDirection { get; set; }
     }
 }

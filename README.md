@@ -1,5 +1,6 @@
 Welcome to Shai & Maor's Iweatherdataservice
 
+
 SUMMARY :
 
 	this is a final project of C# course at shenkar college
@@ -10,23 +11,32 @@ SUMMARY :
 
 API - HOW TO US :
 
-	//declaring and assiging Location object
-	Location loc = new Location();
+    //example of use , sample code of how to implement the factory and the interface
 
-	loc.cityName = "London";
 
-	loc.countryName = "UK";
+        //declaring and assiging Location object
+        Location loc = new Location();
+        loc.cityName = "London";
+        loc.countryName = "UK";
 
-	//requesting the 1st provider using the provider identifier in the factory
-	IWeatherDataService service = WeatherDataServiceFactory .getWeatherDataService(WeatherDataServiceFactory.Providers.WUNDERGROUND);
 
-	//recieving a WeatherData object from the first provider
-	WeatherData weatherData = service.GetWeatherData(loc);
+        //requesting the WUNDERGROUND provider using the provider identifier in the factory
+		//you can use 1 of the 3 providers options : WUNDERGROUND / WORLDWEATHERONLINE / OPENMAP	
+        IWeatherDataService service = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Providers.WUNDERGROUND);
 
-	//printing the WeatherData fields, OUTPUT Example : WUNDERGROUND : London, 24 celsius
-	System.Console.WriteLine("WUNDERGROUND : " + weatherData.cityName + ", " + weatherData.temp + " celsius");
+        //recieving a WeatherData object from the first provider
+        WeatherData weatherData = service.GetWeatherData(loc);
 
-	enjoy
+        //printing the WeatherData fields, OUTPUT Example :
+        //WUNDERGROUND: city: London, temp: 14 celsius, humidity: 94 %, pressure: 1004 hPa, wind: 20 kPh West
+        System.Console.WriteLine("WUNDERGROUND : city : " + weatherData.cityName +
+                                      ", temp : " + weatherData.temp + " celsius" +
+                                      ", humidity : " + weatherData.humidity +
+                                      ", pressure : " + weatherData.pressure + " hPa" +
+                                      ", wind : " + weatherData.windSpeed + " kPh" +
+                                      " " + weatherData.windDirection);
+					  
+		enjoy
 
 CONTACT US :
 
@@ -34,4 +44,4 @@ CONTACT US :
 
 	Maor Toubian : MAORTOUBIAN@GMAIL.COM
 
-	Shai Malka : SHAI2210@GMAIL.COM 
+	Shai Malka : SHAI2210@GMAIL.COM
